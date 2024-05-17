@@ -6,6 +6,9 @@ body{
 nav{
     background-color: #112d4e;
     text-align: right;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
 }
 li{
     display: inline;
@@ -34,10 +37,17 @@ main{
     justify-content: space-around;
 }
 .news-card{
-    width: 30%;
+    width: 25%;
     background-color: #112d4e;
     padding: 20px;
     border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.5s ease-in-out;
+}
+.news-card:hover{
+    scale: 1.1;
 }
 .news-card img{
     width: 100%;
@@ -55,7 +65,7 @@ img{
 #contact {
     border: 5px dashed #112d4e;
     width: 500PX;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 10px;
 }
 form{
@@ -72,4 +82,12 @@ input,textarea{
 .news{
     margin: 20px;
 
+}
+footer{
+    text-align: center;
+    background-color: #112d4e;
+    padding: 10px;
+}
+h2{
+    text-align: center;
 }
